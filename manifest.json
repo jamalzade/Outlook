@@ -1,0 +1,60 @@
+{
+  "manifest_version": 3,
+  "name": "Outlook Translator",
+  "version": "1.0",
+  "description": "ترجمه و مدیریت قالب‌های پاسخ در Outlook",
+  
+  
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  
+  
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png"
+    }
+  },
+  
+  
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": [
+    "*://*.outlook.live.com/*",
+    "*://translate.googleapis.com/*"
+  ],
+  
+  
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  
+ 
+  "content_scripts": [
+    {
+      "matches": ["*://*.outlook.live.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  
+ 
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "styles.css",
+        "fonts/Vazir.woff2",
+        "fonts/Vazir.woff",
+        "fonts/Vazir.ttf",
+        "templates.json",
+        "icons/icon16.png",
+        "icons/icon48.png"
+      ],
+      "matches": ["*://*.outlook.live.com/*"]
+    }
+  ]
+}

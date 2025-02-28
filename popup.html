@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Outlook Translator</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* استایل‌های اختصاصی پاپ‌آپ */
+        body {
+            min-width: 300px;
+            padding: 15px;
+            background: #f8f9fa;
+            margin: 0;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            width: 32px;
+            height: 32px;
+        }
+
+        h3 {
+            color: #2c3e50;
+            margin: 0;
+            font-size: 18px;
+        }
+
+        #templateSelect {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            font-family: 'Vazir', Tahoma;
+            background: white;
+        }
+
+        #applyTemplate {
+            width: 100%;
+            padding: 12px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-family: 'Vazir', Tahoma;
+        }
+
+        #applyTemplate:hover {
+            background: #2980b9;
+        }
+
+        #applyTemplate:disabled {
+            background: #95a5a6;
+            cursor: not-allowed;
+        }
+
+        .loading {
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 14px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="icons/icon48.png" alt="آیکون">
+        <h3>قالب‌های پاسخ خودکار</h3>
+    </div>
+
+    <select id="templateSelect">
+        <option value="" disabled selected>یک قالب انتخاب کنید...</option>
+    </select>
+
+    <button id="applyTemplate" disabled>اعمال قالب</button>
+
+    <div class="loading" id="loadingText">در حال لود قالب‌ها...</div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+{
+  "templates": [
+    {
+      "name": "Höfliche Antwort",
+      "content": "Sehr geehrte Damen und Herren,\n\nvielen Dank für Ihre E-Mail. Ich werde die Angelegenheit prüfen und Ihnen so schnell wie möglich antworten.\n\nMit freundlichen Grüßen,\n[Ihr Name]"
+    },
+    {
+      "name": "Mehr Informationen anfordern",
+      "content": "Sehr geehrte Damen und Herren,\n\nvielen Dank für Ihre Nachricht. Könnten Sie mir bitte weitere Informationen zu diesem Thema zusenden, damit ich Sie besser unterstützen kann?\n\nVielen Dank,\n[Ihr Name]"
+    },
+    {
+      "name": "Eingangsbestätigung",
+      "content": "Sehr geehrte Damen und Herren,\n\nich habe Ihre E-Mail erhalten und bearbeite sie derzeit. Sie erhalten in Kürze eine Antwort.\n\nMit freundlichen Grüßen,\n[Ihr Name]"
+    }
+  ]
+}
